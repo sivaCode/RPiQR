@@ -8,6 +8,7 @@ import time
 def DecodeQRImage(CVImage):
     #start = datetime.datetime.utcnow()
     codes = None
+    print "inside QR read"
     if not CVImage == None :
         image = PILImage.fromarray(CVImage)
         codes = zbarlight.scan_codes('qrcode', image)
