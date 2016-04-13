@@ -33,7 +33,7 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
     print "img shape check"
     print(image.shape)
     #code = DecodeQRImage(image)
-    cv2.putText(image,codes, (100, 200), font, 2, (0, 0, 255), 2)
+    #cv2.putText(image,codes, (100, 200), font, 2, (0, 0, 255), 2)
     cv2.imshow("Pi Camera Feed", image)
     key = cv2.waitKey(1) & 0xFF
     rawCapture.truncate(0)
